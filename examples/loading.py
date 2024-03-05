@@ -19,7 +19,7 @@ def main():
     img_path = str(Path(__file__).resolve().parent.joinpath('images', 'loading.gif'))
     loading = Image.open(img_path)
     size = [min(*device.size)] * 2
-    posn = ((device.width - size[0]) // 2, device.height - size[1])
+    posn = ((device.width - size[0]) // 2, device.height - size[0])
 
     while True:
         for frame in ImageSequence.Iterator(loading):
