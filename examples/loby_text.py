@@ -49,8 +49,6 @@ def primitives(device, draw):
     draw.rectangle(device.bounding_box, outline="white")
 
 def main():
-    device = get_device()
-
     print("Testing basic canvas graphics...")
     for _ in range(2):
         with canvas(device) as draw:
