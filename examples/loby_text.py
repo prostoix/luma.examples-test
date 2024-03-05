@@ -52,7 +52,12 @@ def primitives(device, draw):
 def main():
     print("Testing basic canvas graphics...")
     for _ in range(2):
-        with canvas(device) as draw:
-            primitives(device, draw)
-time.sleep(5)
+        with canvas(device) as draw:primitives(device, draw)
+    time.sleep(5)
 
+
+if __name__ == "__main__":
+    try:
+        main()
+    except KeyboardInterrupt:
+        pass
