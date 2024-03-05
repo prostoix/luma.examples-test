@@ -46,7 +46,7 @@ def primitives(device, draw):
     x += shape_width + padding
 
     # Write two lines of text
-    left, t, right, bottom = draw.textbbox((0, 0), 'World!')
+    left, t, right, bottom = draw.textbbox((0, 0), 'World!!!')
     w, h = right - left, bottom - t
     x = device.width - padding - w
     draw.rectangle((x, top + 4, x + w, top + h), fill="black")
