@@ -41,10 +41,11 @@ def primitives(device, draw):
     left, t, right, bottom = draw.textbbox((0, 0), 'World!!!')
     w, h = right - left, bottom - t
     x = device.width - padding - w
-    draw.rectangle((x, top + 4, x + w, top + h), fill="black")
-    draw.rectangle((x, top + 16, x + w, top + 16 + h), fill="black")
-    draw.text((device.width - padding - w, top + 4), 'Hello', fill="cyan")
-    draw.text((device.width - padding - w, top + 16), 'World!', fill="purple")
+    #draw.rectangle((x, top + 4, x + w, top + h), fill="black")
+    #draw.rectangle((x, top + 16, x + w, top + 16 + h), fill="black")
+    draw.text((30, 40), 'Hello', fill="cyan")
+    #draw.text((device.width - padding - w, top + 4), 'Hello', fill="cyan")
+    #draw.text((device.width - padding - w, top + 16), 'World!', fill="purple")
 
     # Draw a rectangle of the same size of screen
     draw.rectangle(device.bounding_box, outline="white")
