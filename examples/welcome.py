@@ -17,7 +17,11 @@ from PIL import ImageFont
 
 
 welcome = [
-    u"ЗАКГРУЗКА"
+    u"ЗАГРУЗКА",
+    u"загрузка",
+    u"заГРУЗка",
+    u"ЗАгрузКА",
+    u"ЗА ГР УЗ КА"
 ]
 
 colors = [
