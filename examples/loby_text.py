@@ -1,3 +1,4 @@
+import time
 from luma.core.interface.serial import i2c
 from luma.core.render import canvas
 from luma.oled.device import ssd1306
@@ -53,5 +54,5 @@ def main():
     for _ in range(2):
         with canvas(device) as draw:
             primitives(device, draw)
-
+time.sleep(5)
 
