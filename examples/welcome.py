@@ -134,7 +134,7 @@ def overlapping(pt_a, pt_b, w, h):
 
 def main():
     regulator = framerate_regulator(fps=30)
-    fonts = [make_font("code2000.ttf", sz) for sz in range(24, 8, -2)]
+    fonts = [make_font("SAC.ttf", sz) for sz in range(24, 8, -2)]
     sq = device.width * 2
     virtual = viewport(device, sq, sq)
 
