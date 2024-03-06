@@ -6,7 +6,7 @@ from luma.oled.device import ssd1306
 from PIL import ImageFont
 
 #Define the I2C serial interface and the SSD1306 device
-serial = i2c(port=1, address=0x3C) 
+serial = i2c(port=0, address=0x3C)
 device = ssd1306(serial)
 
 #Define a custom font
