@@ -12,9 +12,12 @@ device = ssd1306(serial)
 font_path = "/usr/share/fonts/SAC.ttf"
 font = ImageFont.truetype(font_path, 20)
 
-text = "Ну, привет!!!"
+name = "Piano"
+number = 001
+collection = 1
 
 with canvas(device) as draw:
-    draw.text((10, 0), text, font=font, fill="white")
-
+    draw.text((10, 0), name, font=font, fill="white")
+    draw.text((10, 5), number, font=font, fill="white")
+    draw.text((60, 10), collection, font=font, fill="white")
 time.sleep(5) 
