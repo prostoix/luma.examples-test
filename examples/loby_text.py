@@ -10,7 +10,7 @@ serial = i2c(port=0, address=0x3C)
 device = ssd1306(serial)
 
 #Define a custom font
-font_path = "fonts/SAC.ttf" 
+font_path = "tmp/luma.examples-test/examples/fonts/SAC.ttf" 
 custom_font = ImageFont.truetype(font_path, 12)
 
 #Display text using the custom font
