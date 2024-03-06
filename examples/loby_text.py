@@ -12,7 +12,9 @@ device = ssd1306(serial)
 font_path = "/usr/share/fonts/SAC.ttf"
 font = ImageFont.truetype(font_path, 12)
 
-text = "Hello, World!"
+text = "Ну, привет!!!"
 
 with canvas(device) as draw:
     draw.text((0, 0), text, font=font, fill="white")
+
+time.sleep(5) 
