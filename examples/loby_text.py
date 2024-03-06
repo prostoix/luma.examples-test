@@ -9,10 +9,10 @@ from PIL import ImageFont
 serial = i2c(port=0, address=0x3C)
 device = ssd1306(serial)
 
-font_path = "/usr/share/fonts/SAC.ttf"
-font_h1 = ImageFont.truetype(font_path, 40)
-font_h2 = ImageFont.truetype(font_path, 20)
-font_h3 = ImageFont.truetype(font_path, 12)
+
+font_h1 = ImageFont.truetype("/usr/share/fonts/SAC.ttf", 40)
+font_h2 = ImageFont.truetype("/usr/share/fonts/SAC.ttf", 20)
+font_h3 = ImageFont.truetype("/usr/share/fonts/DS.ttf", 12)
 
 name = "Piano"
 number = "001"
