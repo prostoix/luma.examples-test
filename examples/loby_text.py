@@ -10,11 +10,11 @@ serial = i2c(port=0, address=0x3C)
 device = ssd1306(serial)
 
 font_path = "/usr/share/fonts/SAC.ttf"
-font = ImageFont.truetype(font_path, 12)
+font = ImageFont.truetype(font_path, 20)
 
 text = "Ну, привет!!!"
 
 with canvas(device) as draw:
-    draw.text((0, 0), text, font=font, fill="white")
+    draw.text((10, 0), text, font=font, fill="white")
 
 time.sleep(5) 
