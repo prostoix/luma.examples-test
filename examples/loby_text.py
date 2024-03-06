@@ -21,5 +21,5 @@ collection = "1"
 with canvas(device) as draw:
     draw.text((10, 0), name, font=font_h3, fill="white")
     draw.text((10, 5), number, font=font_h1, fill="white")
-    draw.text((60, 10), collection, font=font_h3, fill="white")
+    draw.text((60, 40), collection, font=font_h3, fill="white")
 time.sleep(15) 
