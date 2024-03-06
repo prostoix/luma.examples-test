@@ -13,8 +13,8 @@ font_path = "/usr/share/fonts/SAC.ttf"
 font = ImageFont.truetype(font_path, 20)
 
 name = "Piano"
-number = 001
-collection = 1
+number = "001"
+collection = "1"
 
 with canvas(device) as draw:
     draw.text((10, 0), name, font=font, fill="white")
