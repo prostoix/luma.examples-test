@@ -1,12 +1,15 @@
+import time
+from pathlib import Path
 from luma.core.interface.serial import i2c
-from luma.oled.device import ssd1306
 from luma.core.render import canvas
+from luma.oled.device import ssd1306
 from PIL import ImageFont
 
-serial = i2c(device=0, address=0x3C)
+#Define the I2C serial interface and the SSD1306 device
+serial = i2c(port=0, address=0x3C)
 device = ssd1306(serial)
 
-font_path = "SAC.ttf"
+font_path = "/usr/share/fonts/SAC.ttf"
 font = ImageFont.truetype(font_path, 12)
 
 text = "Hello, World!"
